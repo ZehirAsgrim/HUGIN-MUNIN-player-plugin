@@ -14,9 +14,9 @@
 系統：[已安裝好可自行撰寫LADSPA plugin的Volumio映像檔](https://drive.google.com/open?id=1zqb10P6CvRy5yy96RGitqSoSBvn1M0gR)\
 （安裝步驟繁瑣，需要FFTW library等，也會因版本而異，有機會再另外寫一篇詳細說明安裝方式）
 * *index.html    (ui)*\
-取代/volumio/http/www/index.html。並將IP改為rPi的IP
+取代/volumio/http/www/index.html，並將IP改為rPi的IP。
 * *Hugin.js    (shell)*\
-置於rPi上並將IP改為server的IP。
+置於rPi上並將IP改為server的IP。\
 在樹莓派上運作的程式，利用ssh 連接並執行。負責接收使用者的喜好選擇並與歌曲資訊一起傳輸給穆寧，以及接收其回傳的數值去下指令更改等化器。
 * *Munun.js    (server)*\
 在伺服器主機端上運行的程式。負責接收使用者資訊並執行程式奧丁，使其根據資料運算出新的曲線後，再將數值回傳給胡金。歷次的選擇與數值皆會被記錄。
